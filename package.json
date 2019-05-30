@@ -1,0 +1,22 @@
+{
+  "name": "tech-talk-react-hooks-drum-sequencing-explore-d3",
+  "version": "0.0.0",
+  "description": "Sandbox for exploring mdx-deck and deploying to Zeit Now 2.0",
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/tech-talk-react-hooks-drum-sequencing-explore-d3"
+  },
+  "scripts": {
+    "start": "mdx-deck demo-advanced.mdx",
+    "build": "npm run now-build",
+    "now-build": "rm -rf dist/ && mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/",
+    "deploy": "now && now alias"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "mdx-deck": "^1.8.2",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
+  }
+}
