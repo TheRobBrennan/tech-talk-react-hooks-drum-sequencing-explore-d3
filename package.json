@@ -8,15 +8,13 @@
     "url": "git+https://github.com/TheRobBrennan/tech-talk-react-hooks-drum-sequencing-explore-d3"
   },
   "scripts": {
-    "start": "mdx-deck demo-advanced.mdx",
+    "start": "mdx-deck presentation.mdx",
     "build": "npm run now-build",
-    "now-build": "rm -rf dist/ && mdx-deck build demo-advanced.mdx --no-html && cp -r images dist/ && cp -r snippets dist/",
-    "deploy": "now && now alias"
+    "now-build": "rm -rf dist/ && mdx-deck build presentation.mdx --no-html && cp -r images dist/",
+    "deploy": "now"
   },
   "license": "ISC",
   "devDependencies": {
-    "mdx-deck": "^1.8.2",
-    "mdx-deck-code-surfer": "^0.5.5",
-    "raw-loader": "^1.0.0"
+    "mdx-deck": "^2.3.2"
   }
 }

@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "name": "demo-mdxdeck-nowv2",
-  "alias": "demo-mdxdeck-nowv2.now.sh",
+  "name": "tech-talk-react-hooks-drum-sequencing-explore-d3",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
   ],
